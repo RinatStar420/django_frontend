@@ -13,3 +13,7 @@ class Index(TemplateView):
 
     def get_context_data(self, **kwargs):
         return {'some_data': [choice(words) for i in range(10)]}
+
+
+class Report(TemplateView):
+    template_name = 'main/report.html'
